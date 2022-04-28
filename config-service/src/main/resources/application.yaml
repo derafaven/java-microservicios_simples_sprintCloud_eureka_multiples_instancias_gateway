@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #rama donde se guarda
+          default-label: master
+          uri: https://github.com/derafaven/java-microservicios_simples_sprintCloud_eureka_multiples_instancias_gateway.git
+          #archivo de configuracion de microservicios
+          search-paths: config-data
+  application:
+    #nombre del servicio
+    name: config-service
