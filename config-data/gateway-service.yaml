@@ -23,4 +23,4 @@ spring:
         - id: carro-service
           uri: lb://carro-service
           predicates:
-            - Path=/carro/**
+            - Path=/api/carro/**
